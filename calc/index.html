@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+
+<body>
+    <form>
+        <div>first operand: <input type="number" id="op1"></div>
+        <div>second operand: <input type="number" id="op2"></div>
+        Select operator: 
+        <select id="op">
+            <option value="add">Add</option>
+            <option value="sub">Sub</option>
+            <option value="mul">Mul</option>
+            <option value="div">Div</option>
+        </select>
+        <button type="button" onclick="calc()">Calculate</button>
+    </form>
+
+    <div id="result"></div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
