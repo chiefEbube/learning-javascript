@@ -13,33 +13,45 @@
 <body>
     <div class="counter">
         <h1>Passengers:</h1>
-        <h1 class="count">0</h1>
+        <h1 id="count">0</h1>
         <div class="btns">
             <button class="up" onclick="increase()"><i class="fa-solid fa-arrow-up"></i></button>
             <button class="down" onclick="decrease()"><i class="fa-solid fa-arrow-down"></i></button>
-            <button onclick="speak()">Save</button>
+            <button onclick="save()">Save</button>    
         </div>
+        <p id="save-element">Previous entries: </p>
     </div>
 
 
     <script>
-        let passengerCount = parseInt(document.querySelector(".count").innerHTML);
-        
-        let increase = () => {
-            document.querySelector(".count").innerHTML = ++passengerCount;
+        let passengerCount = 0;
+        const countElement = document.getElementById("count");
+
+        const increase = () => {
+            countElement.innerText = ++passengerCount;
         }
 
-        let decrease = () => {
+
+        const decrease = () => {
             if (passengerCount > 0){
-                document.querySelector(".count").innerHTML = --passengerCount;
+                countElement.innerHTML = --passengerCount;
             }
 
             else{
                 alert("There are no passengers");
             }
         }
+        
+        const saveElement = document.getElementById("save-element");
 
-        let speak = () => {alert("Passenger record saved")}
+        
+        const save = () => {
+            let countAndDash = passengerCount + " - "
+
+            saveElement.textContent += countAndDash;
+            passengerCount = 0;
+            countElement.textContent = passengerCount;
+        }
     </script>
 </body>
 

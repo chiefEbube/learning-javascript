@@ -15,7 +15,13 @@ body {
 
 h1 { 
     color: rgb(230, 228, 227);
-    font-size: 4em;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+p{
+    color: rgb(230, 228, 227);
+    font-size: 1em;
     text-align: center;
 }
 
