@@ -28,5 +28,12 @@ p:first-of-type{
     padding: 10px 0;
     border: none;
     border-radius: 2px;
-    margin: 2.5px;
+    margin: 4px;
+    cursor: pointer;
+    transition:all ease-in-out .3s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    
 }
