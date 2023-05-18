@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 50px;
+}
+div{
+    margin: 0.5rem 0;
+    margin-inline: auto;
+    padding: 5px;
+    width: 10rem;
+    height: 1.5rem;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#apple-shelf{
+    background-color: rgb(255, 167, 167);
+}
+
+#orange-shelf{
+    background-color: rgb(248, 179, 139);
+}
