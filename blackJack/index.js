@@ -1,6 +1,9 @@
-function rollDice(){
-     return Math.floor(Math.random() * 6) + 1
+let castle = {
+     name: "Dairsie Castle",
+     guests: 14,
+     isFree: false,
+     content: ["beds", "baths"]
 }
 
-console.log(rollDice())
-
+console.log(castle.name)
+console.log(castle.content)

@@ -1,12 +1,19 @@
+let player = {
+    name: "Soye",
+    chips: 154
+}
+
 let cards = []
 let sum = 0
 let hasBlackJack = false
 let isAlive = false
 let message = ""
 const messageElement = document.getElementById("message")
-
 const sumElement = document.getElementById("sum")
 const cardsElement = document.querySelector("#cards")
+const playerElement = document.querySelector("#player")
+
+playerElement.textContent = player.name + ": $" + player.chips
 
 function getRandomCard() {
     let randomNum = Math.ceil(Math.random() * 13)
